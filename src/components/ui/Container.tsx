@@ -11,7 +11,7 @@ export function Container({ children, narrow = false, className }: ContainerProp
     <div
       className={cn(
         'mx-auto w-full px-6 md:px-8',
-        narrow ? 'max-w-[var(--container-narrow)]' : 'max-w-[var(--container-max)]',
+        narrow ? 'max-w-(--container-narrow)' : 'max-w-(--container-max)',
         className,
       )}
     >
