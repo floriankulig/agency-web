@@ -1,14 +1,26 @@
+import { Footer, Header } from '@/components/layout'
+import {
+  HeroSection,
+  KontaktSection,
+  LeistungenSection,
+  PainSection,
+  ProzessSection,
+  UeberSection,
+} from '@/components/sections'
+
 export default function Home() {
   return (
     <>
-      <header>{/* Header Platzhalter */}</header>
-
-      <main className="flex min-h-screen flex-col items-center justify-center">
-        <p>skorva</p>
-        <h1 className="text-4xl font-bold">skorva</h1>
+      <Header />
+      <main>
+        <HeroSection />
+        <PainSection />
+        <LeistungenSection />
+        <ProzessSection />
+        <UeberSection />
+        <KontaktSection />
       </main>
-
-      <footer>{/* Footer Platzhalter */}</footer>
+      <Footer />
     </>
   )
 }
