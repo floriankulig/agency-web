@@ -1,10 +1,11 @@
 'use client'
 
-import { motion, useInView } from 'motion/react'
-import { useRef } from 'react'
 import { Section } from '@/components/layout/Section'
 import { Badge } from '@/components/ui/Badge'
 import { fadeInUp, staggerContainer } from '@/lib/motion'
+import { Monitor, Network } from 'lucide-react'
+import { motion, useInView } from 'motion/react'
+import { useRef } from 'react'
 
 const examples = [
   {
@@ -32,47 +33,13 @@ const nebenleistungen = [
     title: 'Systeme verbinden, Daten nutzbar machen',
     description:
       'Ihre Software-Tools reden nicht miteinander? Wir bauen die Brücken — ob API-Anbindung, Cloud-Migration oder ein Dashboard, das Ihnen zeigt, was wirklich läuft. Bestandsaufnahme bis Umsetzung.',
-    icon: (
-      <svg
-        width="22"
-        height="22"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.75"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        <rect x="2" y="3" width="6" height="6" rx="1" />
-        <rect x="16" y="3" width="6" height="6" rx="1" />
-        <rect x="9" y="15" width="6" height="6" rx="1" />
-        <path d="M5 9v4h14V9" />
-        <path d="M12 13v2" />
-      </svg>
-    ),
+    icon: <Network size={22} aria-hidden="true" />,
   },
   {
     title: 'Eine Website, die für Sie arbeitet',
     description:
       'Modernes Design, SEO-optimiert, mit Online-Terminbuchung und Kontaktformular, das direkt in Ihr CRM läuft. Kein Baukastensystem — aber auch kein Sechs-Monats-Projekt.',
-    icon: (
-      <svg
-        width="22"
-        height="22"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.75"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        <rect x="2" y="3" width="20" height="14" rx="2" />
-        <path d="M8 21h8" />
-        <path d="M12 17v4" />
-      </svg>
-    ),
+    icon: <Monitor size={22} aria-hidden="true" />,
   },
 ]
 

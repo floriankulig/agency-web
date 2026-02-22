@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import { motion } from 'motion/react'
-import { Button } from '@/components/ui/Button'
-import { Container } from '@/components/ui/Container'
-import { fadeInUp, staggerContainer } from '@/lib/motion'
+import { Button } from "@/components/ui/Button";
+import { Container } from "@/components/ui/Container";
+import { fadeInUp, staggerContainer } from "@/lib/motion";
+import { motion } from "motion/react";
 
 export function HeroSection() {
   return (
-    <section className="relative flex h-screen items-center overflow-hidden">
+    <section className="relative flex h-screen items-center overflow-hidden bg-dark-700">
       <Container>
         <motion.div
           variants={staggerContainer}
@@ -38,8 +38,9 @@ export function HeroSection() {
             variants={fadeInUp}
             className="text-h4 text-mid-500 leading-body max-w-xl font-normal"
           >
-            Wir automatisieren die Prozesse, die Ihre Mitarbeiter ausbremsen — mit KI, die wirklich
-            funktioniert. Für Handwerk, Fertigung und Mittelstand in Franken.
+            Wir automatisieren die Prozesse, die Ihre Mitarbeiter ausbremsen —
+            mit KI, die wirklich funktioniert. Für Handwerk, Fertigung und
+            Mittelstand in Franken.
           </motion.p>
 
           {/* CTAs */}
@@ -54,5 +55,5 @@ export function HeroSection() {
         </motion.div>
       </Container>
     </section>
-  )
+  );
 }
