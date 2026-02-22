@@ -1,4 +1,4 @@
-import NextImage, { ImageProps as NextImageProps } from 'next/image'
+import NextImage, { type ImageProps as NextImageProps } from 'next/image'
 
 import { cn } from '@/lib/utils'
 
@@ -14,7 +14,15 @@ interface ImageProps {
   fill?: boolean
 }
 
-export function Image({ src, alt, width, height, className, priority = false, fill = false }: ImageProps) {
+export function Image({
+  src,
+  alt,
+  width,
+  height,
+  className,
+  priority = false,
+  fill = false,
+}: ImageProps) {
   const props: NextImageProps = {
     src,
     alt,

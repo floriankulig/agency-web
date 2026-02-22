@@ -1,9 +1,9 @@
 'use client'
 
-import { Section } from '@/components/layout/Section'
-import { fadeInUp, staggerContainer } from '@/lib/motion'
 import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
+import { Section } from '@/components/layout/Section'
+import { fadeInUp, staggerContainer } from '@/lib/motion'
 
 const steps = [
   {
@@ -77,7 +77,7 @@ export function ProzessSection() {
               )}
 
               {/* Number circle */}
-              <div className="brand-gradient relative flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full">
+              <div className="brand-gradient relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full">
                 <span className="text-small font-semibold text-white">{step.number}</span>
               </div>
 

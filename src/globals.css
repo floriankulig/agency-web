@@ -2,31 +2,31 @@
 
 @theme {
   /* ─── Brand Colors ─── */
-  --color-teal: #38756E;
-  --color-mint: #5DB29A;
-  --color-lime: #8FB848;
+  --color-teal: #38756e;
+  --color-mint: #5db29a;
+  --color-lime: #8fb848;
 
   /* ─── Neutrals ─── */
-  --color-dark-900: #111C18;
-  --color-dark-800: #1A2E27;
-  --color-dark-700: #243D33;
-  --color-mid-500: #4A6E62;
-  --color-mid-400: #6A9088;
-  --color-light-200: #B8D8D0;
-  --color-light-100: #D9F2E6;
-  --color-white: #F4FAF7;
+  --color-dark-900: #111c18;
+  --color-dark-800: #1a2e27;
+  --color-dark-700: #243d33;
+  --color-mid-500: #4a6e62;
+  --color-mid-400: #6a9088;
+  --color-light-200: #b8d8d0;
+  --color-light-100: #d9f2e6;
+  --color-white: #f4faf7;
 
   /* ─── Typography ─── */
-  --font-sans: 'Outfit', sans-serif;
+  --font-sans: "Outfit", sans-serif;
 
   /* ─── Font Sizes (mit Line-Height) ─── */
-  --text-h1: 2.25rem;       /* 36px */
-  --text-h2: 1.875rem;      /* 30px */
-  --text-h3: 1.5rem;        /* 24px */
-  --text-h4: 1.25rem;       /* 20px */
-  --text-body: 1rem;        /* 16px */
-  --text-small: 0.875rem;   /* 14px */
-  --text-label: 0.75rem;    /* 12px */
+  --text-h1: 2.25rem; /* 36px */
+  --text-h2: 1.875rem; /* 30px */
+  --text-h3: 1.5rem; /* 24px */
+  --text-h4: 1.25rem; /* 20px */
+  --text-body: 1rem; /* 16px */
+  --text-small: 0.875rem; /* 14px */
+  --text-label: 0.75rem; /* 12px */
 
   /* ─── Letter Spacing ─── */
   --tracking-tight: -0.03em;
@@ -39,20 +39,20 @@
   --leading-body: 1.6;
 
   /* ─── Spacing Scale (8px Basis) ─── */
-  --spacing-section: 6rem;      /* 96px — Abstand zwischen Sektionen */
-  --spacing-block: 3rem;        /* 48px — Abstand innerhalb Sektionen */
-  --spacing-element: 1.5rem;    /* 24px — Abstand zwischen Elementen */
+  --spacing-section: 6rem; /* 96px — Abstand zwischen Sektionen */
+  --spacing-block: 3rem; /* 48px — Abstand innerhalb Sektionen */
+  --spacing-element: 1.5rem; /* 24px — Abstand zwischen Elementen */
 
   /* ─── Layout ─── */
-  --container-max: 72rem;       /* 1152px */
-  --container-narrow: 48rem;    /* 768px */
+  --container-max: 72rem; /* 1152px */
+  --container-narrow: 48rem; /* 768px */
 
   /* ─── Border Radius ─── */
-  --radius-sm: 0.375rem;   /* 6px */
-  --radius-md: 0.5rem;     /* 8px */
-  --radius-lg: 0.75rem;    /* 12px */
-  --radius-xl: 1rem;       /* 16px */
-  --radius-2xl: 1.5rem;    /* 24px */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+  --radius-2xl: 1.5rem; /* 24px */
 
   /* ─── Transitions ─── */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -63,7 +63,7 @@
 
 /* ─── Brand Gradient Utilities ─── */
 @utility brand-gradient {
-  background: linear-gradient(99.5deg, #5DB29A 2.975%, #38756E 97.025%);
+  background: linear-gradient(99.5deg, #5db29a 2.975%, #38756e 97.025%);
 }
 
 @utility subtle-gradient-bg {
@@ -78,26 +78,33 @@
 /* ─── Base Styles ─── */
 @layer base {
   body {
-    @apply bg-white text-mid-500 font-sans text-body leading-body antialiased;
+    @apply text-mid-500 text-body leading-body bg-white font-sans antialiased;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply text-dark-800;
   }
 
   h1 {
-    @apply text-h1 font-semibold tracking-tight leading-heading;
+    @apply text-h1 leading-heading font-semibold tracking-tight text-pretty;
   }
 
   h2 {
-    @apply text-h2 font-semibold tracking-tight leading-heading;
+    @apply text-h2 leading-heading font-semibold tracking-tight text-pretty;
   }
 
   h3 {
-    @apply text-h3 font-medium tracking-tight leading-subheading;
+    @apply text-h3 leading-subheading font-medium tracking-tight text-pretty;
   }
 
   h4 {
-    @apply text-h4 font-medium leading-subheading;
+    @apply text-h4 leading-subheading font-medium text-pretty;
+  }
+
+  p {
+    @apply text-pretty;
   }
 }

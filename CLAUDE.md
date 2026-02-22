@@ -68,5 +68,8 @@ Vor jeder Arbeit an diesem Projekt:
 ## Commands
 - `pnpm dev` — Lokaler Dev-Server
 - `pnpm build` — Production Build
-- `pnpm format` — Prettier formatieren
-- `pnpm format:check` — Prettier prüfen
+- `pnpm lint` — Biome lint
+- `pnpm format` — Biome Format (schreibt Änderungen)
+- `pnpm format:check` — Biome Format (nur prüfen)
+- `pnpm check` — Biome lint + format prüfen
+- `pnpm check:fix` — Biome lint + format anwenden

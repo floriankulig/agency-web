@@ -1,9 +1,9 @@
 'use client'
 
-import { Section } from '@/components/layout/Section'
-import { fadeInUp, staggerContainer } from '@/lib/motion'
 import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
+import { Section } from '@/components/layout/Section'
+import { fadeInUp, staggerContainer } from '@/lib/motion'
 
 const facts = [
   'Softwareentwicklung & Cloud-Architektur',

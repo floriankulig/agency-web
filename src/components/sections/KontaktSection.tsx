@@ -1,10 +1,10 @@
 'use client'
 
+import { motion, useInView } from 'motion/react'
+import { useRef } from 'react'
 import { Section } from '@/components/layout/Section'
 import { Button } from '@/components/ui/Button'
 import { fadeInUp, staggerContainer } from '@/lib/motion'
-import { motion, useInView } from 'motion/react'
-import { useRef } from 'react'
 
 export function KontaktSection() {
   const ref = useRef(null)

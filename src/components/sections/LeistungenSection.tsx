@@ -1,10 +1,10 @@
 'use client'
 
+import { motion, useInView } from 'motion/react'
+import { useRef } from 'react'
 import { Section } from '@/components/layout/Section'
 import { Badge } from '@/components/ui/Badge'
 import { fadeInUp, staggerContainer } from '@/lib/motion'
-import { motion, useInView } from 'motion/react'
-import { useRef } from 'react'
 
 const examples = [
   {
