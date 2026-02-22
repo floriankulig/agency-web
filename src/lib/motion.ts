@@ -1,20 +1,22 @@
-import { type Variants } from 'motion/react'
+import type { Variants } from 'motion/react'
 
 const easeOutExpo = [0.16, 1, 0.3, 1] as const
 
 export const fadeIn: Variants = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0, filter: 'blur(6px)' },
   visible: {
     opacity: 1,
+    filter: 'blur(0px)',
     transition: { duration: 0.5, ease: easeOutExpo },
   },
 }
 
 export const fadeInUp: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 24, filter: 'blur(6px)' },
   visible: {
     opacity: 1,
     y: 0,
+    filter: 'blur(0px)',
     transition: { duration: 0.6, ease: easeOutExpo },
   },
 }

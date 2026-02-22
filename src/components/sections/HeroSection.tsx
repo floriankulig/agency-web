@@ -1,20 +1,14 @@
 'use client'
 
+import { motion } from 'motion/react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
 import { fadeInUp, staggerContainer } from '@/lib/motion'
-import { motion } from 'motion/react'
 
 export function HeroSection() {
   return (
-    <section className="subtle-gradient-bg relative flex min-h-screen items-center overflow-hidden pt-16">
-      {/* Decorative gradient blob */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="bg-mint/10 absolute top-1/4 right-0 h-[600px] w-[600px] translate-x-1/2 rounded-full blur-3xl" />
-        <div className="bg-teal/8 absolute bottom-0 left-0 h-[400px] w-[400px] -translate-x-1/3 rounded-full blur-3xl" />
-      </div>
-
-      <Container narrow>
+    <section className="relative flex h-screen items-center overflow-hidden">
+      <Container>
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -53,7 +47,7 @@ export function HeroSection() {
             <Button href="#" size="lg">
               Erstgespräch vereinbaren
             </Button>
-            <Button href="mailto:hallo@skorva.de" variant="ghost" size="lg">
+            <Button href="#" variant="ghost" size="lg">
               Oder schreiben Sie uns direkt
             </Button>
           </motion.div>
