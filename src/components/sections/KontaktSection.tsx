@@ -1,17 +1,17 @@
 'use client'
 
-import { motion, useInView } from 'motion/react'
-import { useRef } from 'react'
 import { Section } from '@/components/layout/Section'
 import { Button } from '@/components/ui/Button'
 import { fadeInUp, staggerContainer } from '@/lib/motion'
+import { motion, useInView } from 'motion/react'
+import { useRef } from 'react'
 
 export function KontaktSection() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <Section id="kontakt" className="bg-dark-800 text-white">
+    <Section id="kontakt" className="bg-dark-900 text-white">
       <motion.div
         ref={ref}
         variants={staggerContainer}

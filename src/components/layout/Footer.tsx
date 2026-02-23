@@ -2,7 +2,7 @@ import { Container } from '@/components/ui/Container'
 
 export function Footer() {
   return (
-    <footer className="bg-dark-800 text-light-200">
+    <footer className="bg-dark-900 text-light-200">
       <Container>
         <div className="flex flex-col gap-6 py-12 md:flex-row md:items-center md:justify-between">
           {/* Logo + Slogan */}
