@@ -93,7 +93,7 @@ export function LeistungenSection() {
         {/* Closing sentence */}
         <motion.p
           variants={fadeInUp}
-          className="text-body text-mid-400 border-teal/30 mb-16 border-l-2 pl-4 italic"
+          className="text-body text-mid-400 border-teal/30 text-balance mb-16 border-l-2 pl-4 italic"
         >
           Das sind Beispiele. Jeder Prozess, der heute manuell, repetitiv und regelbasiert ist,
           lässt sich automatisieren. Wir finden gemeinsam heraus, wo bei Ihnen der größte Hebel

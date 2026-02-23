@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils'
+import { motion } from 'motion/react'
 
 interface ButtonProps {
   children: React.ReactNode
@@ -38,15 +39,15 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <motion.a href={href} className={classes} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
         {children}
-      </a>
+      </motion.a>
     )
   }
 
   return (
-    <button type={type} onClick={onClick} className={classes}>
+    <motion.button className={classes} type={type} onTap={onClick} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
       {children}
-    </button>
+    </motion.button>
   )
 }

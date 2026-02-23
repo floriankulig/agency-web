@@ -7,7 +7,4 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "editor.codeActionsOnSave": {
-    "source.sort.imports": "never",
-  },
 }
